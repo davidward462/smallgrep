@@ -22,10 +22,9 @@ int main(int argc, char** argv)
                 return 1;
         }
 
-        // for testing
-        printf("Searching for %s in %s...\n", query, filename);
-
         run(query, file);
+
+        fclose(file);
 
         return 0;
 }

@@ -23,8 +23,8 @@ int main(int argc, char** argv)
                 return 1;
         }
 
-        printf("opened file %s\n", filename);
-
+        // for testing
+        printf("Searching for %s in %s...\n", query, filename);
 
         return 0;
 }

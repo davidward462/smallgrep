@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lib.h"
 
 int main(int argc, char** argv)
 {
@@ -10,7 +11,6 @@ int main(int argc, char** argv)
         }
 
         // Store variables from file arguments
-        char* program_name = argv[0];
         char* query = argv[1];
         char* filename = argv[2];
 
@@ -25,6 +25,8 @@ int main(int argc, char** argv)
 
         // for testing
         printf("Searching for %s in %s...\n", query, filename);
+
+        run();
 
         return 0;
 }

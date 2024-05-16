@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "lib.h"
 
 void run(char *query, FILE *file)
@@ -8,8 +9,11 @@ void run(char *query, FILE *file)
 
         // Iterate through lines of file
         while(fgets(string, 100, file)) {
-                printf("%s", string);
 
                 // Check line to see if query is in the line
+                if (strstr(string, query) != NULL) {
+                        // if string query was found
+                        printf("%s", string);
+                }
         }
 }

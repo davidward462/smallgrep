@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lib.h"
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
         if (argc < 3) {
                 // TODO: print this to stderr and exit with the correct error value
@@ -10,8 +10,8 @@ int main(int argc, char** argv)
         }
 
         // Store variables from file arguments
-        char* query = argv[1];
-        char* filename = argv[2];
+        char *query = argv[1];
+        char *filename = argv[2];
 
         // open file
         FILE *file = fopen(filename, "r");

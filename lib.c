@@ -1,6 +1,7 @@
+#include <stdio.h>
 #include "lib.h"
 
-void run()
+void run(char* query, FILE* file)
 {
 
 }

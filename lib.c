@@ -17,9 +17,7 @@ void check_line(char *line, char* query)
 void run(char *query, FILE *file)
 {
         int max_line_length = 2048;
-        // TODO: determine line length
         char line[max_line_length];
-        int foo[max_line_length];
 
         // Iterate through lines of file
         while(fgets(line, max_line_length, file)) {

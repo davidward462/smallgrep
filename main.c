@@ -4,6 +4,7 @@
 
 int main(int argc, char **argv)
 {
+        // check argument count
         if (argc < 3) {
                 fprintf(stderr, "usage: ./grep <query> <filename>\n");
                 exit(1);

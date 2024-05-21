@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 
         // check if file was opened correctly
         if (file == NULL) {
-                fprintf(stderr, "Error opening file.\n");
+                fprintf(stderr, "grep: %s: File does not exist, or you do not have permission to open it.\n", filename);
                 exit(1);
         }
 
